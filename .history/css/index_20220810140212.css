@@ -1,0 +1,400 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 1920px;
+    min-width: 428px;
+    width: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, i {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 7.5rem;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+p, a {
+    font-size: 3rem;
+}
+
+/* header section */
+
+body{
+    font-size:62%;
+    color: white;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/home-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+
+header div{
+    background-color: rgba(0,0,0,0.6);
+    height:150px;
+    width:100%;
+}
+
+header h1{
+    font-size: 3.5rem;
+    display:flex;
+    justify-content:center;
+}
+
+header nav{
+    display: flex;
+    justify-content:space-evenly;
+    width:100%;   
+}
+
+nav button{
+ color:white;
+ list-style: none;
+ text-decoration:none;
+ background-color: rgba(0,0,0,0);
+ border:0px;
+
+}
+.socialMediaButtons{
+    display:flex;
+    align-content:center;
+    justify-content:center;
+}
+
+/* spacers */
+.spacer {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(0, 4, 17);
+}
+.spacer-sm {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 4, 17);
+}
+
+/* gallery section */
+.gallery {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(0, 4, 17);
+}
+
+.gallery h2{
+    font-size:300%;
+    margin-bottom:1%;
+}
+
+.row{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+.row img{
+    width:20%;
+    margin-bottom:2%;
+}
+
+/* about us section */
+.about {
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+    background-image: url("../img/staff-cooks.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.about-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+.about h2 {
+    width: 100%;
+    font-size:450%;
+    margin:3% 0;
+}
+
+.about-container .text {
+    width: 50%;
+}
+
+.about-container .text h3{
+    font-size:400%;
+}
+
+.about-container .text p{
+    font-size:200%;
+}
+
+
+
+/* contact us section */
+.contact {
+    text-align: center;
+    background-image: url("../img/jumbo-restaurant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 4, 17);
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 4, 17, .8);
+    }
+
+.contact h2 {
+    padding-top: 5vh;
+    font-size:450%;
+}
+
+.contact h3 {
+    padding-top: 2.5vh;
+}
+
+.contact p {
+    padding: .5vh 0;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.address {
+    width: 25%;
+    
+}
+
+.address h3{
+    font-size:350%;
+}
+
+.address p{
+    font-size:250%;
+}
+
+.hours {
+    width: 25%;
+    padding-bottom: 2.5vh;
+}
+
+.hours h3{
+    font-size:350%;
+}
+
+.hours div p{
+ font-size:250%;
+}
+
+.contacts {
+    width: 25%;
+}
+
+.contacts h3{
+    font-size:350%;
+}
+
+.contacts div a{
+    font-size:250%;
+}
+
+/* footer section */
+footer {
+    width: 100%;
+    height: 25vh;
+    padding-top: 2.5vh;
+    font-size: 3rem;
+    background-color:black;
+    display:flex;
+    flex-direction:row;
+}
+
+footer div{
+    display:flex;
+    flex-flow:column;
+}
+
+.footerNav{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-left:10%;
+}
+
+.footerNav nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width:100%;
+}
+
+footer h3{
+    font-size:50%;
+}
+
+
+
+footer h4{
+    font-size:25%;
+    display:flex;
+    justify-content:center;
+}
+
+.box{
+    display:flex;
+    justify-content:left;
+    margin-bottom:50%;
+}
+
+.box h4{
+    font-size:30%;
+    display:flex;
+    justify-content:right;
+    
+}
+
+footer button{
+    margin:4%, 4%;
+}
+
+/* mobile media query */
+@media (max-width: 428px) {
+    /* header section */
+    
+
+    /* gallery section */
+    .gallery {
+        height: auto;
+    }
+    
+    /* about us section */
+
+    .about {
+        height: 200vh;
+    }
+    
+    .about h2 {
+        width: 100%;
+        padding-top: 5vh;
+    }
+    
+    .about-container .text {
+        width: 85%;
+    }
+    
+    /* contact us section */
+    .contact h3 {
+        padding-top: 2.5vh;
+    }
+    
+    .info {
+        flex-wrap: wrap;
+    }
+    
+    .address {
+        width: 100%;
+        padding-bottom: 2.5vh;
+    }
+    
+    .hours {
+        width: 100%;
+    }
+    
+    .contacts {
+        width: 100%;
+        padding-bottom: 2.5vh;
+    }
+
+    /* footer section */
+    footer {
+        height: auto;
+        padding-top: 2.5vh;
+        font-size: 2rem;
+    }
+}
